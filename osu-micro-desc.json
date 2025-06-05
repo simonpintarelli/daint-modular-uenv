@@ -1,0 +1,29 @@
+{
+    "compilers": [{
+        "version": "13.3.0",
+        "type": "gcc",
+        "image": {
+            "name": "gcc/13.3.0@daint",
+            "prefix_path": "/user-environment/gcc/13.3.0",
+            "file": "/capstor/scratch/cscs/simonpi/base-uenvs/daint/gcc-13.3.0.sqfs",
+            "sha256": "8fb9e03fb7ca017c2d89fcf326eb7f86bba5b7046c5ae371bb09e0c5ff3c7e74"
+        }
+    }],
+    "gpu": {
+        "type": "cuda",
+        "image": {
+            "name": "cuda/12.8.0@daint",
+            "prefix_path": "/user-environment/cuda/12.8.0",
+            "file": "/capstor/scratch/cscs/simonpi/base-uenvs/daint/cuda-12.8.sqfs",
+            "sha256": "71429e2b7c54482a0a9fdcd02f66b1f2dc9a0c447bc47d2c61eb84d251df9f12"
+        }
+    },
+    "root": {
+        "image": {
+            "name": "osu-micro-benchmarks@daint",
+            "prefix_path": "/user-environment/",
+            "file": "/capstor/scratch/cscs/simonpi/modular-uenvs/osu-daint.sqfs",
+            "sha256": "c4e990bcbdf261ab627143596a811ca239637d861b3e6b3e5b69f421dc3830d1"
+        }
+    }
+}

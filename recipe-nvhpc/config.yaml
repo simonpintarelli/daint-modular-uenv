@@ -1,0 +1,6 @@
+name: nvhpc-base-uenv
+store: /user-environment/nvhpc/25.3
+description: nvhpc@25.3
+spack:
+  repo: https://github.com/spack/spack.git
+  commit: develop

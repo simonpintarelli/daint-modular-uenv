@@ -1,0 +1,7 @@
+gcc-env:
+  mpi: null
+  unify: true
+  specs:
+    - gcc@13 languages:="c,c++,fortran" %gcc@12
+  views:
+    default:

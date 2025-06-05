@@ -1,0 +1,7 @@
+nvhpc-env:
+  mpi: null
+  unify: true
+  specs:
+    - nvhpc@25.3
+  views:
+    default:

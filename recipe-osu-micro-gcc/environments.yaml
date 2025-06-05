@@ -1,0 +1,8 @@
+gcc-env:
+  mpi:
+    spec: cray-mpich@8.1.32
+    gpu: cuda
+  unify: true
+  specs: [ osu-micro-benchmarks+cuda ]
+  views:
+    default:

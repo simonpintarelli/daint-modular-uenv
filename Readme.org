@@ -1,0 +1,19 @@
+* Modular UENV example recipe
+
+Base uenvs:
+- [[file:recipe-gcc][recipe-gcc]] gcc13 built with system gcc12
+  - gcc13 installed (via spack/stackinator) in =/user-environment/gcc/13.3.0=
+- [[file:recipe-cuda][recipe-cuda]]
+  - cuda12.8 installed (via spack/stackinator) in =/user-environment/cuda/12.8.0=
+- [[file:recipe-nvhpc][recipe-nvhpc]] (depends on the gcc base uenv)
+
+The final uenv is [[file:recipe-osu-micro-gcc][recipe-osu-micro-gcc]] it uses the cuda/gcc base uenvs.
+
+- Basic support for modular uenvs in ~uenv2~ (currently from json description only):  https://github.com/eth-cscs/uenv2/tree/modular-sqfs
+- ~alps-cluster-config~ used to build the images with ~spack@develop~: https://github.com/eth-cscs/alps-cluster-config/tree/feat/modular-uenv
+- Stackinator: https://github.com/eth-cscs/stackinator/pull/224
+
+#+begin_src bash
+  # on daint, sqfs files are in scratch /capstor/scratch/cscs/simonpi/base-uenvs/ and /capstor/scratch/cscs/simonpi/modular-uenvs
+  uenv start ./osu-micro-desc.json
+#+end_src

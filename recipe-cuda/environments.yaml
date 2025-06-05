@@ -1,0 +1,6 @@
+cuda-env:
+  mpi: null
+  unify: true
+  specs: [ cuda@12.8.0 ]
+  views:
+    default:
