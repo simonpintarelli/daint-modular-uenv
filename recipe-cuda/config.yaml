@@ -3,4 +3,4 @@ store: /user-environment/cuda/12.8.0
 description: cuda
 spack:
   repo: https://github.com/spack/spack.git
-  commit: develop
+  commit: d5c665be56a68aaab0b6188d1deec5f462399c35
